@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/reference"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_S"
+        android:alpha="1"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/collapse_sliders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_S"
+        app:tint="@color/white"
+        android:background="?attr/colorOnPrimary"
+        android:src="@drawable/arrow_circle_down"
+        app:layout_constraintEnd_toEndOf="@id/sliders"
+        app:layout_constraintBottom_toTopOf="@id/sliders"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sliders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_S"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="?attr/colorOnPrimary">
+
+        <com.google.android.material.slider.Slider
+            style="@style/Sliders"
+            android:id="@+id/brightnessSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_S"
+            android:stepSize="10.0"
+            android:value="0.0"
+            android:valueFrom="-100.0"
+            android:valueTo="100.0"
+            app:layout_constraintEnd_toStartOf="@id/ic_saturation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ic_saturation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_S"
+            android:src="@drawable/brightness"
+            app:layout_constraintBottom_toBottomOf="@id/brightnessSlider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/brightnessSlider"
+            app:layout_constraintTop_toTopOf="@id/brightnessSlider"
+            app:tint="@color/white" />
+
+        <com.google.android.material.slider.Slider
+            style="@style/Sliders"
+            android:id="@+id/contrastSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_S"
+            android:stepSize="10.0"
+            android:value="0.0"
+            android:valueFrom="-100.0"
+            android:valueTo="100.0"
+            app:layout_constraintEnd_toStartOf="@id/ic_contrast"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/brightnessSlider"
+            />
+
+        <ImageView
+            android:id="@+id/ic_contrast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_S"
+            android:src="@drawable/contrast_view_circle"
+            app:layout_constraintBottom_toBottomOf="@id/contrastSlider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/contrastSlider"
+            app:layout_constraintTop_toTopOf="@id/contrastSlider"
+            app:tint="@color/white" />
+
+        <com.google.android.material.slider.Slider
+            style="@style/Sliders"
+            android:id="@+id/alphaSlider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_S"
+            android:stepSize="10.0"
+            android:value="100.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"
+            app:layout_constraintEnd_toStartOf="@id/ic_alpha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contrastSlider" />
+
+        <ImageView
+            android:id="@+id/ic_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_S"
+            android:src="@drawable/color_filter"
+            app:layout_constraintBottom_toBottomOf="@id/alphaSlider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/alphaSlider"
+            app:layout_constraintTop_toTopOf="@id/alphaSlider"
+            app:tint="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

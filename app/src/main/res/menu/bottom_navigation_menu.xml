@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/drawFragment"
+        android:icon="@drawable/cosmetic_brush"
+        android:title="@string/draw" />
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/calendar_thirty_two"
+        android:title="@string/history" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/config"
+        android:title="@string/settings" />
+</menu>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">ARDraw</string>
+
+    <!--Bottom menu-->
+    <string name="draw" translatable="false">draw</string>
+    <string name="history" translatable="false">history</string>
+    <string name="settings" translatable="false">settings</string>
+
+    <!--Messages-->
+    <string name="imageNotSelected" translatable="false">Изображение не выбрано</string>
+    <string name="imageEditsSaved" translatable="false">Изменения сохранены</string>
+    <string name="imageSelected" translatable="false">Обложка сохранена</string>
+    <string name="imageSelectionError" translatable="false">Ошибка сохранения обложки</string>
+
+    <!--EASY PERMISSIONS-->
+    <string name="permissionDenied" translatable="false">"Разрешение отклонено!"</string>
+    <string name="checkSettingsForAccess" translatable="false">"Перейдите в настройки, чтобы включить доступ."</string>
+    <string name="accessToStorageGranted" translatable="false">"Доступ к хранилищу разрешён!"</string>
+    <string name="appNeedsPermission" translatable="false">"Приложению нужно разрешение на доступ к изображениям."</string>
+
+</resources>

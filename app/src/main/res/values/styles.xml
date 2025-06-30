@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sliders">
+        <item name="trackColorActive">?attr/colorOnSecondary</item>
+        <item name="trackColorInactive">?attr/colorOnSecondary</item>
+        <item name="trackColor">?attr/colorOnSecondary</item>
+        <item name="tickColor">?attr/colorOnSecondary</item>
+        <item name="thumbColor">?attr/colorSecondary</item>
+    </style>
+</resources>

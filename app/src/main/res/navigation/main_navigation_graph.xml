@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/drawFragment">
+
+    <fragment
+        android:id="@+id/drawFragment"
+        android:name="com.sleeplessdog.ardraw.draw.presentation.DrawFragment"
+        android:label="@string/draw"
+        tools:layout="@layout/fragment_draw" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.sleeplessdog.ardraw.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.sleeplessdog.ardraw.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

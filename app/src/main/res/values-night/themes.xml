@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ARDraw" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/Tertiary_Fixed</item> <!-- Кнопки -->
+        <item name="colorOnPrimary">@color/On_Tertiary_Fixed</item> <!-- Текст -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Tertiary_Fixed_Dim</item>
+        <item name="colorOnSecondary">@color/On_Tertiary_Fixed_Dim</item>
+        <!-- Цвет status bar -->
+
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+        <!-- Цвет кнопок навигации -->
+        <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
+    </style>
+</resources>
